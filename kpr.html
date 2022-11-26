@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2113030041</title>
+    <link rel="stylesheet" href="design.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text">Kalkulator KPR iB</h1>
+      <div class="flex">
+        <div class="box">
+          <img class="pic" src="karung.png" alt="" />
+          <div class="desc">
+            <h4 class="font color">Harga Properti</h4>
+            <input id="hp" class="isi" type="text" placeholder="Harga Properti" />
+          </div>
+        </div>
+        <div class="box">
+          <img class="pic" src="money.png" alt="" />
+          <div class="desc">
+            <h4 class="font color">Uang Muka</h4>
+            <input id="um" class="isi" type="text" value="0" />
+          </div>
+        </div>
+      </div>
+      <div class="flex-2">
+        <div class="box">
+          <img class="pic" src="persen.png" alt="" />
+          <div class="desc">
+            <h4 class="font color">Bunga/Ujrah/Margin per Tahun (%)</h4>
+            <input id="bum" class="isi" type="text" value="0.00" />
+          </div>
+        </div>
+        <div class="box">
+          <img class="pic" src="date.png" alt="" />
+          <div class="desc">
+            <h4 class="font color">Jangka Waktu Pinjaman (tahun)</h4>
+            <input id="jwp" class="isi" type="text" placeholder="Jangka Waktu Pinjaman"/>
+          </div>
+        </div>
+      </div>
+      <div class="hasil">
+        <div class="result">
+            <h5 class="font">Estimasi Angsuran Per Bulan</h5>
+            <div id="hasil" class="rst"></div>
+        </div>
+        <button class="btn" onclick="hitung()">Hitung Sekarang</button>
+      </div>
+    </div>
+  </body>
+</html>
